@@ -1,2 +1,0 @@
-NAME   |   SKYPE_USER   |   EMAIL   |   PHONE_NBR
-
