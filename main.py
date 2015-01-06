@@ -1,6 +1,6 @@
 import sys
 from database import contacts,skypeUser,messagesDump,messageSearch,messageByUser,videoMessages,fileTransfer,contactsIp
-  
+
 def main():
     print '   _________  ___       _____ ____    _____ _____________ ______________                   '
     print '  |         ||   \     /    //    \  /    ||            ||             |                   '
@@ -31,6 +31,7 @@ def main():
     print '      - LINUX OS: /home/user/.Skype/%SKYPE_USER% \n                                            '
     print '      - MAC OS X: /Users/%USER%/Library/Application Support/Skype/%SKYPE_USER% \n              '
     print '      - ANDROID(ROOTED DEVICE): System/data/data/com.skype.%%/files/%SKYPE_USER% \n            '
+    print '      - MOVE ANY SKYPE DATABASE TO THE DATABASE DIRECTORY AND START DUMPING!                   '
     
     while True:
         option = -1
