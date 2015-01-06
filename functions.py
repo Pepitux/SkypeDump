@@ -1,8 +1,9 @@
 import os
 
-
-def createFolders():
-    if not os.path.exists("database") and not os.path.exists("dump"):
+def createDumpFolder():
+    if not os.path.exists("dump"):
+        os.makedirs("dump")
+              
+def createDatabaseFolder():
+    if not os.path.exists("database"):
         os.makedirs("database")
-        os.makedirs("dump")        
-        

@@ -1,6 +1,6 @@
 import sqlite3 as db
 import sys
-from functions import createFolders
+from functions import createDatabaseFolder, createDumpFolder
 
 error = open('error.log', 'w+')
 try:
@@ -12,7 +12,8 @@ try:
     connect.text_factory = str
 except:
     print 'Error connecting to Database'
-    createFolders()
+    createDumpFolder()
+    createDatabaseFolder()
     error.write("Error connecting to the database, check its integrity and if its a valid database \n")
     sys.exit()
 
